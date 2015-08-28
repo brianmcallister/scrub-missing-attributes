@@ -8,15 +8,16 @@ module.exports = {
 
   module: {
     loaders: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        loader: 'babel-loader'
-      }
+      {test: /\.js$/, loader: 'babel-loader', exclude: /(node_modules)/},
+      {test: /\.js$/, loader: 'eslint-loader', exclude: /(node_modules)/}
     ]
   },
 
   resolve: {
     extensions: ['', '.js']
+  },
+
+  eslint: {
+    configFile: '.eslintrc'
   }
 };

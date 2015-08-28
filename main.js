@@ -1,7 +1,7 @@
 let Backbone = require('backbone');
 let _ = require('underscore');
 
-let data = {one: 1, two: 2, three: 3}
+let data = {one: 1, two: 2, three: 3};
 
 // Overwrite Backbone.ajax to respond with some json.
 Backbone.ajax = (args) =>
@@ -50,7 +50,7 @@ let fetch = (event) => {
   }
 
   model.fetch({scrubMissingAttributes: scrub});
-}
+};
 
 let render = () => {
   let attrs = model.toJSON();
@@ -64,12 +64,12 @@ let render = () => {
   }
 
   el.innerHTML = html;
-}
+};
 
 let clear = () => {
   model.clear();
   render();
-}
+};
 
 document.querySelector('.scrub').addEventListener('click', fetch);
 document.querySelector('.no-scrub').addEventListener('click', fetch);
