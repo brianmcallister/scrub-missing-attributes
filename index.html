@@ -1,9 +1,31 @@
 <!doctype html>
 <html>
 <head>
-  <script src="build.js"></script>
+  <script src="build.js" async></script>
+
+  <style>
+    .results-wrapper {
+      margin: 50px;
+    }
+
+    .results-list {
+      background: #fafafa;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="buttons">
+    <button class="scrub">fetch and scrub</button>
+    <button class="no-scrub">fetch without scrubbing</button>
+    <button class="clear">clear</button>
+  </div>
+
+  <div class="results-wrapper">
+    <p>results</p>
+
+    <div class="results-list"></div>
+  </div>
 </body>
 </html>
