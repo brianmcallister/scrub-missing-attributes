@@ -1,0 +1,11 @@
+{
+  "name": "scrub-missing-attributes",
+  "version": "0.0.1",
+  "description": "Scrub missing attributes from Backbone.Model instances.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Wm. McAllister",
+  "license": "ISC"
+}
